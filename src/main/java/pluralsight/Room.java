@@ -27,4 +27,21 @@ public class Room {
     public void setDirty(boolean dirty) {this.isDirty = dirty;}
     public void setOccupied(boolean occupied) {this.isOccupied = occupied;}
     public void setPrice(double price) {this.price = price;}
+
+    //methods
+    public void checkIn() {
+        setDirty(true);
+        setOccupied(true);
+        setAvailable(false);
+    }
+
+    public void checkOut() {
+        setOccupied(false);
+        setDirty(false);
+        setAvailable(true);
+    }
+
+    public void cleanRoom() {
+        setDirty(false);
+    }
 }

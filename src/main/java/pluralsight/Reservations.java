@@ -28,4 +28,5 @@ public class Reservations {
     public void setRoomType(String roomType) {this.roomType = roomType;}
     public void setTotalPrice(double totalPrice) {this.totalPrice = totalPrice;}
     public void setWeekend(boolean weekend) {this.isWeekend = weekend;}
+
 }
