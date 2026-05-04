@@ -15,7 +15,7 @@ public class employee {
     public double getTotalPay() {return payRate * hoursWorked;}
     public double getOvertimeHoursWorked() {
         double overtimeHours = (hoursWorked - 40);
-        if (overtimeHours < 0) {
+        if (overtimeHours <= 0) {
             System.out.println("No overtime hours worked!");
             return 0;
         } else {
