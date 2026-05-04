@@ -16,7 +16,6 @@ public class employee {
     public double getOvertimeHoursWorked() {
         double overtimeHours = (hoursWorked - 40);
         if (overtimeHours <= 0) {
-            System.out.println("No overtime hours worked!");
             return 0;
         } else {
             return overtimeHours;
