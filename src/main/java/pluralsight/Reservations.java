@@ -1,12 +1,21 @@
 package pluralsight;
 
 
-public class reservations {
-        String roomType;
-        double price;
-        int nights;
-        boolean isWeekend;
-        double totalPrice;
+public class Reservations {
+    private String roomType;
+    private double price;
+    private int nights;
+    private boolean isWeekend;
+    private double totalPrice;
+
+    public Reservations(String roomType, double price, int nights,
+                 boolean isWeekend, double totalPrice) {
+        this.roomType = roomType;
+        this.price = price;
+        this.nights = nights;
+        this.isWeekend = isWeekend;
+        this.totalPrice = totalPrice;
+    }
 
     public double getPrice() {return this.price;}
     public double getTotalPrice() {return this.totalPrice;}

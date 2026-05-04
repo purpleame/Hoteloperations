@@ -1,11 +1,20 @@
 package pluralsight;
 
-public class room {
-    int beds;
-    double price;
-    boolean isOccupied;
-    boolean isDirty;
-    boolean isAvailable;
+public class Room {
+    private int beds;
+    private double price;
+    private boolean isOccupied;
+    private boolean isDirty;
+    private boolean isAvailable;
+
+    public Room(int beds, double price, boolean isOccupied,
+                boolean isDirty, boolean isAvailable) {
+        this.beds = beds;
+        this.price = price;
+        this.isAvailable = isAvailable;
+        this.isOccupied = isOccupied;
+        this.isDirty = isDirty;
+    }
 
     public int getNumberOfBeds() {return this.beds;}
     public double getPrice() {return this.price;}
